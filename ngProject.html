@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Rancho&effect=shadow-multiple">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container" data-ng-app="d_app">
+    <div class="row" data-ng-controller="d_control">
+        <h1 class="font-effect-shadow-multiple header">Website for Generating Blogs</h1>
+        <h1 class="text_shadows">{{text_shows}}</h1>
+
+        <h4 id="detail_heading">{{details}}</h4>
+        <form class="" id="user_form">
+            <label class="name_lb"  for="name_author" data-ng-bind="d_author"></label>
+            <input class="inpt_field" data-ng-model="u_aname" type="text" id="name_author">
+            <br>
+            <p class="para_field">{{u_aname}}</p>
+            <br><br>
+
+            <label class="name_lb"  for="blog_title" data-ng-bind="d_title"></label>
+            <input class="inpt_field" data-ng-model="u_btitle" type="text" id="blog_title">
+            <p class="para_field">{{u_btitle}}</p>
+            
+            <br><br>
+
+            <label class="name_lb" for="s_title" data-ng-bind="d_sub"></label>
+            <input class="inpt_field" data-ng-model="u_stitle" type="text" id="s_title">
+            <p class="para_field">{{u_stitle}}</p>
+            <br><br>
+
+            <textarea class="inpt_field" name="my_b_textarea" id="my_textarea" ng-model="u_bblog" placeholder="Type the body of the blog here"></textarea>
+            <p class="para_field">{{u_bblog}} </p>
+
+          
+
+            <button class= "btn btn-success" ng-click="enter_data()"> Send Data</button>
+            <p class="para_field">{{sendPost}}</p>
+                
+            
+        </form>
+
+    </div>
+
+    <div class="row" data-ng-controller="img_control">
+        <h1 id="blog_head" class="d_blog">{{heading}}</h1>
+        <h2 id="blog_sub" class="d_blog">{{sub_heading}}</h2>
+
+        <div class="col-6">
+            
+            <!-- <img ng-src="Blog.jpg" width="200" height="200"/> -->
+            <img ng-src="{{image}}" width="600" height="500"/>
+        </div>
+
+        <div class="col-6">
+            <!-- <img ng-src="Blog.jpg" width="200" height="200"/> -->
+            <img ng-src="{{photo}}" width="600" height="500"/>
+        </div>
+        
+    </div>
+
+    <!-- Controller for dropdown -->
+
+    <div class="row" data-ng-controller="Get_info">
+        <h3 id="d_direct" class="d_blog" my-Directive-Try></h3>
+            <br> <br>
+            
+        <!-- <p>{{dProtocol}}</p> -->
+        <div id="first_col" class="col-6"> 
+
+            <h4>{{blog_inuse}}</h4>
+           <select class="data_input" data-ng-model="get_info" ng-options="items for items in authors" ng-change="ret_date()"></select>
+           <h3> <i>{{my_data}}</i></h3>
+        </div>
+
+        <div class="col-6">
+
+            <h4>{{blog_input}}</h4>
+            <input class="data_input" type="text" ng-model="info_data" placeholder="Type inquiry here" ng-change="blog_details()">
+            <h3> <i>{{d_data_blog}}</i></h3>
+          
+        </div>
+            <br>
+            <p id="d_time">{{get_time}}</p>
+        
+    </div>  
+    
+    <div>
+
+    </div>
+
+    
+
+            
+            
+                
+            
+           
+               
+   
+
+    
+    
+       
+ 
+
+</div>
+
+</body>
+</html>

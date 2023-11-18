@@ -1,0 +1,118 @@
+.container{
+    background: fixed;
+    background-color: rgb(186, 226, 223);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+#user_form{
+    margin-top: 2%;
+}
+.inpt_field{ 
+float: right;
+display: flexbox;
+width: 30%;
+height: 10%;
+margin-right: 40%;}
+
+/* Main header */
+.header{
+    text-align: center;
+    font-size: 70px;
+margin-bottom: 5%;}
+
+/* Header Display Text disappearing */
+
+.text_shadows{
+    font-family: 'Tangerine', serif;
+    font-size: 100px;
+    text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
+    color: rgb(243, 35, 167);
+    margin-top: 3%;
+    margin-bottom: none;
+}
+
+    /* Input Heading */
+
+    #detail_heading{
+        margin-top: 5%;
+       margin-left: 8%;
+        text-decoration: underline;
+    }
+.para_field{
+    margin-left: 40%;
+    /* float: right;
+    display: flexbox; */
+}
+
+/* Label names */
+.name_lb{
+    margin-left: 10%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/* for button input */
+
+.btn-success{margin-left: 30%;
+margin-top: 1%;
+margin-bottom: 7%;
+width: 10%;
+height: 10%;
+}
+
+/* Blog heading before images */
+
+#blog_head{
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: bolder;
+    font-size: 50px;
+    color: crimson;
+    text-transform: capitalize;
+    text-shadow: rgb(17, 13, 16) 2px 2px !important;
+}
+
+/* Subtitle texts */
+
+.d_blog{
+    margin-bottom: 3%;
+    font-style: oblique;
+    text-shadow: rgb(210, 121, 188) 2px 2px;
+    
+}
+
+/* Text after image */
+
+#d_direct{
+    margin-top: 3%;
+    border-bottom: solid 4px;
+    margin-bottom: 5% !important;
+}
+
+/* input field for generating data */
+
+.data_input{
+    /* width: 50%; */
+    /* border:none; */
+    /* height: 20%; */
+    margin-bottom: 2%;
+}
+#d_time{
+    border: solid 2px;
+    width: 10%; 
+    /* height: 30%; */
+    border-radius: 40px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: hotpink;
+    font-weight: 600;
+    color: rgb(33, 95, 227);
+    margin-left: 80%;
+}
+
+#first_col{
+    border-right: solid 2px;
+}
